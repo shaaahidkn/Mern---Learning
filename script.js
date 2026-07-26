@@ -5,8 +5,22 @@
 // let myGreeting = greeting + "" + name ;
 // console.log(myGreeting);
 
-console.log(![])
-console.log("loggedIn")
+let str = "hello"
+let rev = ""
+
+//using methods
+let reversed = str.split("").reverse().join("")
+
+console.log(reversed);
+
+//without method
+for(let i = str.length-1; i>=0; i--){
+    rev += str[i]
+}
+console.log(rev);
+
+
+
  
 
 
