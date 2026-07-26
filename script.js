@@ -1,10 +1,11 @@
 
-let name = "shahid";
-let greeting = "hi, my name iss "
+// let name = "shahid";
+// let greeting = "hi, my name iss "
 
-let myGreeting = greeting + "" + name ;
-console.log(myGreeting);
+// let myGreeting = greeting + "" + name ;
+// console.log(myGreeting);
 
+console.log(![])
 
 
 
