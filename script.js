@@ -1,24 +1,36 @@
+// let str = "hello shahid"
 
-// let name = "shahid";
-// let greeting = "hi, my name iss "
+// //using methods
+// let reversed = str.split("").reverse().join("")
 
-// let myGreeting = greeting + "" + name ;
-// console.log(myGreeting);
+// console.log(reversed);
 
-let str = "hello"
-let rev = ""
+// //without method
+// let rev = ""
+// for(let i = str.length-1; i>=0; i--){
+//     rev += str[i]
+// }
+// console.log(rev);
+//----------------------------------------------------------------------------
 
-//using methods
-let reversed = str.split("").reverse().join("")
+// function revNum(num){
+//     return Number(num.toString().split("").reverse().join(""))
+// }
 
-console.log(reversed);
+// console.log(revNum(1234))
 
-//without method
-for(let i = str.length-1; i>=0; i--){
-    rev += str[i]
+
+function revNumber(num){
+    let rev = 0;
+    while(num>0){
+        let rem = num%10
+        rev = rev*10+rem
+        num = Math.floor(num/10)
+    }
+    return rev
 }
-console.log(rev);
 
+console.log(revNumber(12345))
 
 
  
