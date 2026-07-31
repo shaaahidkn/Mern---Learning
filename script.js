@@ -33,21 +33,32 @@
 // console.log(revNumber(12345))
 
 //function that returns the longest word:
-function findLongestWord(sentence){
-    let words = sentence.split(" ")   
-    let longestWord = "";
-     for (let word of words){
-       if(word.length>longestWord.length){
-        longestWord = word
-       }
-    }
-    return longestWord;
+// function findLongestWord(sentence){
+//     let words = sentence.split(" ")   
+//     let longestWord = "";
+//      for (let word of words){
+//        if(word.length>longestWord.length){
+//         longestWord = word
+//        }
+//     }
+//     return longestWord;
     
+// }
+// console.log(findLongestWord("I Loving Coding In Javascript"));
+
+//is palindrome or not?
+function isPalindrome(str){
+    let reversedStr = str.split("").reverse().join("")
+    if(reversedStr === str){
+        return true
+    }else{
+        return false
+    }
+
 }
 
 
-
-console.log(findLongestWord("I Loving Coding In Javascript"));
+console.log(isPalindrome("raceca"))
 
 
 
