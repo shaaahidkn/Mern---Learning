@@ -20,17 +20,35 @@
 // console.log(revNum(1234))
 
 
-function revNumber(num){
-    let rev = 0;
-    while(num>0){
-        let rem = num%10
-        rev = rev*10+rem
-        num = Math.floor(num/10)
+// function revNumber(num){
+//     let rev = 0;
+//     while(num>0){
+//         let rem = num%10            // rem= num%10 will be 4 from 1234
+//         rev = rev*10+rem            // rev= rev*10=0 cause rev is 0 then + rem so 4 (from above)
+//         num = Math.floor(num/10)    // num= here resetting num, so num/10 in 1234 will be 123.4 and .floor will make it 123
+//     }
+//     return rev
+// }
+
+// console.log(revNumber(12345))
+
+//function that returns the longest word:
+function findLongestWord(sentence){
+    let words = sentence.split(" ")   
+    let longestWord = "";
+     for (let word of words){
+       if(word.length>longestWord.length){
+        longestWord = word
+       }
     }
-    return rev
+    return longestWord;
+    
 }
 
-console.log(revNumber(12345))
+
+
+console.log(findLongestWord("I Loving Coding In Javascript"));
+
 
 
  
