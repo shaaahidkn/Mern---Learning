@@ -57,8 +57,10 @@ function isPalindrome(str){
 
 }
 
+console.log(isPalindrome("racecar"))
 
-console.log(isPalindrome("raceca"))
+//next 
+console.log("shahid")
 
 
 
